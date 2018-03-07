@@ -1,49 +1,46 @@
 <section id=form_container__ID>
     <div id=header__ID>
-		Technology-based Experience of Need Satisfaction – (TENS-task)
+		Karolinska Sleepiness Scale (KSS)
 	</div>
 	<form id=F__ID>
         <div class="container">
-            Instructions <br>
-            Reflect on your experience using the SleepFix app and rate your agreement with the following statements
-            <br><br>
-            <hr style='border-top:1px solid #000;'></hr>
+            <hr style='border-top:1px solid #727b84;'></hr>
             <div class="row row__ID">
-                <div class="col-sm-8 control-group">
-                    <span id=quest__ID>1. I feel confident in my ability to keep to my sleep schedule</span>
+                <div class="col-sm control-group">
+                    <span id=quest__ID>Please indicate your sleepiness during the last 5 minutes. Give yourself a rating by clicking in the appropriate box. Remember that you may also use intermediate steps.</span>
                 </div>
-                <div class="col- control-group text-center " style='padding-left:20px'>
+                <div class="col-sm control-group">
                     <label class="control control-radio">
-                        <input type="radio"  name="DASS_1" id=DASS_1__ID required value=1 />
-                        <div class="control_indicator text-center">1</div>
+                            <input type="radio"  name="KSS" id=KSS__ID required value=1 />
+                        <div class="control_indicator text-center">1</div>Extremely Alert
                     </label>
-                </div>
-                <div class="col- control-group text-center">
                     <label class="control control-radio">
-                        <input type="radio"  name="DASS_1" value=2 />
-                        <div class="control_indicator  text-center">2</div>
+                            <input type="radio"  name="KSS" value=2 />
+                        <div class="control_indicator text-center">2</div>&nbsp;&nbsp;
                     </label>
-                </div>
-                <div class="col- control-group text-center ">
                     <label class="control control-radio">
-                        <input type="radio"  name="DASS_1" value=3 />
-                        <div class="control_indicator text-center">4</div>
+                            <input type="radio"  name="KSS" value=3 />
+                        <div class="control_indicator text-center">3</div>Alert
                     </label>
-                </div>
-                <div class="col- control-group text-center ">
                     <label class="control control-radio">
-                        <input type="radio"  name="DASS_1" value=4 />
-                        <div class="control_indicator text-center">4</div>
+                            <input type="radio"  name="KSS" value=4 />
+                        <div class="control_indicator text-center">4</div>&nbsp;&nbsp;
                     </label>
-                </div>
-                <div class="col- control-group text-center ">
                     <label class="control control-radio">
-                        <input type="radio"  name="DASS_1" value=5 />
-                        <div class="control_indicator text-center">5</div>
+                            <input type="radio"  name="KSS" value=5 />
+                        <div class="control_indicator text-center">5</div>Neither alert nor sleepy
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="KSS" value=6 />
+                        <div class="control_indicator text-center">6</div>&nbsp;&nbsp;
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="KSS" value=7 />
+                        <div class="control_indicator text-center">7</div>Extremely sleepy - fighting sleepl
                     </label>
                 </div>
             </div>
-            <hr style='border-top:1px solid #000;'></hr>
+            <hr style='border-top:1px solid #727b84;'></hr>
 			<br>
     		<button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
     	</div>
@@ -62,7 +59,7 @@ function F__ID(){
     height:100%;
     overflow: auto;
     animation: vm_module_fadein 1.0s;
-    background: rgba(151,164,181,1);
+    background: rgba(151,164,181,0.95);
 }
 #form_container__ID{
     padding-top:50px;
@@ -76,7 +73,7 @@ function F__ID(){
     color: #000;
 }
 #form_container__ID .row__ID{
-    padding:2px 0;
+    padding:6px 0;
 }
 #form_container__ID .row__ID:hover{
     /*background-color: #727b84;*/
@@ -92,7 +89,7 @@ function F__ID(){
     font-size:120%;
 }
 #F__ID{
-    border:1px solid #000;
+    border:1px solid #727b84;
     padding:6px 15px 20px 15px;
 }
 #F__ID label
@@ -115,8 +112,18 @@ function F__ID(){
     display: block;
     position: relative;
     padding-left: 30px;
-    margin-bottom: 3px;
-    padding-top: 20px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
     cursor: pointer;
     font-size: 16px;
 }
