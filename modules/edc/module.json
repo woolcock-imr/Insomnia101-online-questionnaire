@@ -8,7 +8,7 @@
 		"VISIT_1_EVE_2_back":{"table_id":"20011421","url":"modules/edc/task/n-back.html","form_module":"n-back-v1e-form"},	"n-back-v1e-form":  {"table_id":"20011421","url":"modules/edc/task/n2-back.form.html"},
 		"VISIT_1_EVE_LCT":{"table_id":"20011422","url":"modules/edc/task/lct.html","form_module":"lct-v1e-form"},	"lct-v1e-form":  {"table_id":"20011422","url":"modules/edc/task/lct.form.html"},
 		"VISIT_1_EVE_DSST":{"table_id":"20011423","url":"modules/edc/task/dsst.html","form_module":"dsst-v1e-form"},	"dsst-v1e-form":  {"table_id":"20011423","url":"modules/edc/task/dsst.form.html"},
-		"VISIT_1_EVE_Tower_of_London_Practice":{"table_id":"20011424","url":"modules/edc/task/tol.html","form_module":"tol-v1ep-form"},	"tol-v1ep-form":  {"table_id":"20011424","url":"modules/edc/task/tol-practice.form.html"},
+		"VISIT_1_EVE_Tower_of_London_Practice":{"table_id":"20011424","url":"modules/edc/task/tol.html","form_module":"tol-v1ep-form"},	"tol-v1ep-form":  {"table_id":"20011424","url":"modules/edc/task/tol.form.html"},
 		"VISIT_1_EVE_Tower_of_London":{"table_id":"20011425","url":"modules/edc/task/tol.html","form_module":"tol-v1e-form"},	"tol-v1e-form":  {"table_id":"20011425","url":"modules/edc/task/tol.form.html"},
 		"VISIT_1_EVE_KSS":{"table_id":"20011426","url":"modules/edc/task/kss.html","form_module":"kss2-v1e-form"},	"kss2-v1e-form":  {"table_id":"20011426","url":"modules/edc/task/kss.form.html"},
 		"VISIT_1_EVE_ESS":{"table_id":"20011428","url":"modules/edc/task/ess.html","form_module":"ess-v1e-form"},	"ess-v1e-form":  {"table_id":"20011428","url":"modules/edc/task/ess.form.html"},
