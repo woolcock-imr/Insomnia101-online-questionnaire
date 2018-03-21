@@ -21,6 +21,15 @@
         }
         //-------------------------------------
         _before_submit=function(record,dbv){
+            record.dbas=((parseInt(record.dbas_1)+parseInt(record.dbas_2)+parseInt(record.dbas_3)+parseInt(record.dbas_4)+parseInt(record.dbas_5)+parseInt(record.dbas_6)+parseInt(record.dbas_7)+parseInt(record.dbas_8)+parseInt(record.dbas_9)+parseInt(record.dbas_10)+parseInt(record.dbas_11)+parseInt(record.dbas_12)+parseInt(record.dbas_13)+parseInt(record.dbas_14)+parseInt(record.dbas_15)+parseInt(record.dbas_16))/16.0).toFixed(1);
+            //1. Expectations = (DBASQ1 + DBASQ2) /2
+            record.dbas_expectations=((parseInt(record.dbas_1)+parseInt(record.dbas_2))/2.0).toFixed(1);
+            //2. Worry / Helplessness=(DBASQ3+DBASQ4+DBASQ10+DBASQ11+DBASQ14+DBASQ16) /6
+            record.dbas_worry=((parseInt(record.dbas_3)+parseInt(record.dbas_4)+parseInt(record.dbas_10)+parseInt(record.dbas_11)+parseInt(record.dbas_14))/6.0).toFixed(1);
+            //3. Medication=(DBASQ6+DBASQ13+DBASQ15)/3
+            record.dbas_medication=((parseInt(record.dbas_6)+parseInt(record.dbas_13)+parseInt(record.dbas_15))/3.0).toFixed(1);
+            //4. Consquences=(DBASQ5+DBASQ7+DBASQ8+DBASQ9+DBASQ12)/5
+            record.dbas_consquences=((parseInt(record.dbas_5)+parseInt(record.dbas_7)+parseInt(record.dbas_8)+parseInt(record.dbas_9)+parseInt(record.dbas_12))/5.0).toFixed(1);
             return _set_status_and_participant(record,dbv);
         }
         //-------------------------------------
